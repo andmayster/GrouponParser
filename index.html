@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GROUPON</title>
+</head>
+<body>
+<h1>GROUPON</h1>
+
+<form action="groupon_parser.py" method="post">
+        <br><label>Enter query or brand id</label>
+        <input type="text" name="TEXT" size="350" required><br>
+        <b>ID example: 157</b><br>
+        <b>Query example: SELECT * FROM brands WHERE id >= 1 AND id <= 10000</b><br><br>
+        <label><input type="checkbox" name="prints">PRINT RESULT</label><br><br>
+        <label><input type="checkbox" name="daily_tests">ENABLE CHECKBOX IF U NEED GENERATE REPORT PAGE</label><br><br>
+        <input type="submit" value="GOGO">
+</form>
+<br>
+
+            <form action="remove_file.py" method="post">
+                <input type="hidden" id="OFF" name="script">
+                <input type="submit" value="STOP SCRIPT">
+            </form>
+
+    <hr>
+
+    <form action="doc.html">
+        <input type="hidden" id="doc" name="documentations">
+        <input type="submit" value="DOCUMENTATIONS LOGIC">
+    </form>
+
+</body>
+</html>
+

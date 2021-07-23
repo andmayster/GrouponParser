@@ -1,0 +1,6 @@
+ip_database="173.198.225.122"
+user_database="andrew_ho"
+password_database="xylv9gR2ICtoPi8X"
+database_testdb_name="testdb"
+database_coupons_name="coupon_blender"
+database_loganalyze_name="log_analyzer"

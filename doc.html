@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Documentation</title>
+
+</head>
+<body>
+    <h1>Documentation for GROUPON Parse</h1>
+    <br><br>
+    <h2>Логика получения данных</h2>
+    <p>Получили перечень купонов со страницы одного бизнеса(Первый гет запрос) <br>
+    и начинаем работать с каждыым из купонов отдельно
+    </p>
+    <br>
+    <span>
+        1: С основной страницы, из получаем json
+    </span>
+    <br><br>
+    <span>
+        2: Далее <b>name</b> и <b>description</b> получаем из json-а.<br>
+        Также из json-а получаем offerId
+    </span>
+    <br><br>
+    <span>
+        3: С помощью offerId делаем запрос "https://www.groupon.com/coupons/redemption/ + offer_id" <br>
+        и получаем второй json а в нем <b>code</b>
+    </span>
+    <br><br>
+    <span>4: Во втором json-е по запросу "https://www.groupon.com/coupons/redemption/ + offer_id" <br>
+        также берем merchantId и делаем Третий запрос "https://www.groupon.com/coupons/redirect/merchant/ + merchantId"<br>
+        из которого получаем наш <b>special_url</b>
+    </span>
+</body>
+</html>
